@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<!--
+    Stellar by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>Welcome to Digital Cultural Resource Recommendation System</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!--[if lte IE 8]><script src="/static/assets/js/ie/html5shiv.js"></script><![endif]-->
+        <link rel="stylesheet" href="/static/assets/css/main.css" />
+        <!--[if lte IE 9]><link rel="stylesheet" href="/static/assets/css/ie9.css" /><![endif]-->
+        <!--[if lte IE 8]><link rel="stylesheet" href="/static/assets/css/ie8.css" /><![endif]-->
+    </head>
+    <body>
+
+        <!-- Wrapper -->
+            <div id="wrapper">
+
+                <!-- Header -->
+                    <header id="header" class="alt">
+                        <span class="logo"><img src="/static/csu.png" alt="" /></span>
+                        <h1>Graduation Project</h1>
+                        <p>built by Fy Zhang</p>
+                    </header>
+
+                <!-- Nav -->
+                    <nav id="nav">
+                        <ul>
+                            <li><a href="#intro" class="active">Introduction</a></li>
+                            <li><a href="#first">Offline calculation</a></li>
+                            <li><a href="#second">Online calculation</a></li>
+                            <li><a href="#cta">Future work</a></li>
+                        </ul>
+                    </nav>
+
+                <!-- Main -->
+                    <div id="main">
+
+                        <!-- Introduction -->
+                            <section id="intro" class="main">
+                                <div class="spotlight">
+                                    <div class="content">
+                                        <header class="major">
+                                            <h2>Digital Cultural Resource Recommendation System</h2>
+                                        </header>
+                                        <p>Digital Cultural Resource Recommendation System.</p>
+                                        <ul class="actions">
+                                            <li><a href="generic.html" class="button">Learn More</a></li>
+                                        </ul>
+                                    </div>
+                                    <span class="image"><img src="/static/pic01.jpg" alt="" /></span>
+                                </div>
+                            </section>
+
+                        <!-- First Section -->
+                            <section id="first" class="main special">
+                                <header class="major">
+                                    <h2>Offline calculation</h2>
+                                </header>
+                                <ul class="features">
+                                    <form action="{{url_for('result')}}" method="post">
+                                    <fieldset>
+                                    User ID:<input type="number" name="userid" min="1" max="24" required>
+                                    <br/>
+                                    <br/>
+                                    <input type="submit" value="Login" />
+                                    <br/>
+                                    <br/>
+                                    </fieldset>
+                                    </form>
+                                </ul>
+                            </section>
+
+                        <!-- Second Section -->
+                            <section id="second" class="main special">
+                                <header class="major">
+                                    <h2>Online calculation</h2>
+                                </header>
+                                <form action="{{url_for('load')}}" method="post">
+                                    <fieldset style="text-align:left;">
+                                        <div style="margin:0 auto;width:420px;">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;User ID:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="userid" min="25" required>
+                                        <br/><br/>
+                                        <label><input type="checkbox" name="resourceid" value=120>玉米螟绿色防控技术</label>
+                                        <br/>
+                                        <label><input type="checkbox" name="resourceid" value=122>玉米早熟矮杆耐密增产技术</label>
+                                        <br/>
+                                        <label><input type="checkbox" name="resourceid" value=132>晋岚绒山羊养殖技术</label>
+                                        <br/>
+                                        <label><input type="checkbox" name="resourceid" value=133>育成猪消化道性疾病识别与防制</label>
+                                        <br/>
+                                        <label><input type="checkbox" name="resourceid" value=136>天一讲堂 艺术品鉴藏</label>
+                                        <br/>
+                                        <label><input type="checkbox" name="resourceid" value=138>四平梅花鹿养殖技术</label>
+                                        <br/>
+                                        <label><input type="checkbox" name="resourceid" value=139>卖光身家后靠裙子鸡3年翻身</label>
+                                        <br/>
+                                        <label><input type="checkbox" name="resourceid" value=141>故宫001 肇建紫禁城</label>
+                                        <br/>
+                                        <label><input type="checkbox" name="resourceid" value=142>鸡免疫抑制性疾病的防治</label>
+                                        <br/>
+                                        <label><input type="checkbox" name="resourceid" value=147>唐宋诗词赏析系列讲座001 李清照词的艺境生成</label>
+                                        <br/><br/>
+                                        </div>
+                                    </fieldset>
+                                    
+                                    <input type="submit" value="Load" />
+                                </form>
+                            </section>
+
+                        <!-- Get Started -->
+                            <section id="cta" class="main special">
+                                <header class="major">
+                                    <h2>Future work</h2>
+                                    <p>Be yourself, don't change for anyone.If they don't like you at your worst,
+                                    then they don't deserve you at your best.</p>
+                                </header>
+                                <footer class="major">
+                                    <ul class="actions">
+                                        <li><a href="generic.html" class="button special">Get Started</a></li>
+                                        <li><a href="generic.html" class="button">Learn More</a></li>
+                                    </ul>
+                                </footer>
+                            </section>
+
+                    </div>
+
+                    <a href="#header" style="position:fixed;right:0;bottom:0">回到顶部</a>
+
+                <!-- Footer -->
+                    <footer id="footer">
+                        <section>
+                            <h2>Acknowledgment</h2>
+                            <p>First,I would like to express my sincere gratitude to my advisors.<br/>
+                            I am grateful for my parents for their unconditional support in all my pursuits.<br/>
+                            Last but not least, I would like to thank my friends.</p>
+                            <ul class="actions">
+                                <li><a href="generic.html" class="button">Learn More</a></li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h2>Contact</h2>
+                            <dl class="alt">
+                                <dt>Address</dt>
+                                <dd>Lushan South Road #932&bull;Changsha Hunan&bull;CHINA</dd>
+                                <dt>Phone</dt>
+                                <dd>13037316802</dd>
+                                <dt>Email</dt>
+                                <dd><a href="#">zhangfeiyu@csu.edu.cn</a></dd>
+                            </dl>
+                            <ul class="icons">
+                                <li><a href="#" class="icon fa-twitter alt"><span class="label">Twitter</span></a></li>
+                                <li><a href="#" class="icon fa-facebook alt"><span class="label">Facebook</span></a></li>
+                                <li><a href="#" class="icon fa-github alt"><span class="label">GitHub</span></a></li>
+                            </ul>
+                        </section>
+                        <p class="copyright">© 2018. All rights reserved.</p>
+                    </footer>
+
+            </div>
+
+        <!-- Scripts -->
+            <script src="/static/assets/js/jquery.min.js"></script>
+            <script src="/static/assets/js/jquery.scrollex.min.js"></script>
+            <script src="/static/assets/js/jquery.scrolly.min.js"></script>
+            <script src="/static/assets/js/skel.min.js"></script>
+            <script src="/static/assets/js/util.js"></script>
+            <!--[if lte IE 8]><script src="/static/assets/js/ie/respond.min.js"></script><![endif]-->
+            <script src="/static/assets/js/main.js"></script>
+
+    </body>
+</html>
